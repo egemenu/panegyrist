@@ -1,10 +1,169 @@
 import Image from "next/image";
+import TrackItem from "@/app/components/TrackItem";
+import AlbumItem from "@/app/components/AlbumItem";
+import HeadingItem from "@/app/components/Heading";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+    <main className="flex flex-col h-screen min-h-screen items-stretch overflow-hidden">
+      <header className="h-12 flex items-center justify-start bg-stone-900 rounded-md m-2 py-2 px-4">
+        <h1 className="text-md mr-8">Home</h1>
+        <h1 className="text-md mr-8">Library</h1>
+        <h1 className="text-md">Search</h1>
+        <div className="flex-1 flex justify-end">
+          <h1 className="text-md">Profile</h1>
+        </div>
+      </header>
+      <div className="h-1 flex-1 flex">
+        <div className="w-3/5 flex flex-col">
+          <div className="bg-stone-900 rounded-md mx-2 mb-2 p-4">
+            <HeadingItem name="Album name" type="Album" artist="Artist name" />
+          </div>
+          <div className="flex flex-col w-100 overflow-auto rounded-md h-100 mx-2 ">
+            <div className="bg-stone-900 rounded-md  mb-2 p-4">
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+              <h1 className="text-sm">The rest</h1>
+            </div>
+          </div>
+        </div>
+        <div className="w-2/5 overflow-auto rounded-md mr-2">
+          <div className="overflow-auto flex flex-col w-100 ">
+            <div className="bg-stone-900 rounded-md mb-2 p-4">
+              <h1 className="text-xl">Other tracks</h1>
+              <TrackItem
+                name="Track name"
+                artist="Artist name"
+                album="Album name"
+                date="25 Nov 2025"
+                duration="5:25"
+              />
+              <TrackItem
+                name="Track name"
+                artist="Artist name"
+                album="Album name"
+                date="25 Nov 2025"
+                duration="5:25"
+              />
+              <TrackItem
+                name="Track name"
+                artist="Artist name"
+                album="Album name"
+                date="25 Nov 2025"
+                duration="5:25"
+              />
+              <TrackItem
+                name="Track name"
+                artist="Artist name"
+                album="Album name"
+                date="25 Nov 2025"
+                duration="5:25"
+              />
+              <TrackItem
+                name="Track name"
+                artist="Artist name"
+                album="Album name"
+                date="25 Nov 2025"
+                duration="5:25"
+              />
+              <TrackItem
+                name="Track name"
+                artist="Artist name"
+                album="Album name"
+                date="25 Nov 2025"
+                duration="5:25"
+              />
+              <TrackItem
+                name="Track name"
+                artist="Artist name"
+                album="Album name"
+                date="25 Nov 2025"
+                duration="5:25"
+              />
+            </div>
+            <div className="bg-stone-900 rounded-md mb-2 p-4 overflow-hidden">
+              <h1 className="text-2xl">Other albums</h1>
+              <div className="flex flex-wrap">
+                <AlbumItem name="Album nameAlbum nameAlbum nameAlbum name" />
+                <AlbumItem name="Album name" />
+                <AlbumItem name="Album name" />
+                <AlbumItem name="Album nameAlbum nameAlbum nameAlbum name" />
+                <AlbumItem name="Album name" />
+                <AlbumItem name="Album name" />
+                <AlbumItem name="Album nameAlbum nameAlbum nameAlbum name" />
+                <AlbumItem name="Album name" />
+                <AlbumItem name="Album name" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+{
+  /* <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-md lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
         </p>
@@ -107,7 +266,5 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-    </main>
-  );
+      </div> */
 }

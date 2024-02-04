@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+.btn {
+  background-color: theme('colors.blue.500');
+  padding: theme('spacing.2') theme('spacing.4');
+  /* ... */
+}
+
+.custom {
+  border: 1px solid theme("colors.blue.500")
+}
+
+.custom2 {
+  border: 1px solid theme("colors.red.500")
+}
